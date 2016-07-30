@@ -5,9 +5,6 @@
 	"authors": [
 		"embarq"
 	],
-	"dependencies": {
-		"jquery": "*"
-	},
 	"license": "ISC",
 	"homepage": "",
 	"ignore": [
