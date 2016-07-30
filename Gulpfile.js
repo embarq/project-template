@@ -17,6 +17,7 @@ var dir = {
     html: '',
     js: '/js',
     scss: '/styles',
+    mainScss: '/index.scss',
     css: '/css',
     images: '/images',
     fonts: '/fonts',
@@ -25,19 +26,17 @@ var dir = {
 
 var appPaths = {
     html: appRoot + dir.html + '/*.html',
-    htmlTmp: appRoot + dir.htmlTmp + '/*.html',
     js: appRoot + dir.js + '/*.js',
-    jsLibs: appRoot + dir.js + '/libs/*.js',
     scss: appRoot + dir.scss + '/**/*.scss',
     images: appRoot + dir.images + '/**/*.*',
     fonts: appRoot + dir.fonts + '/**/*.*',
-    libs: appRoot + dir.libs + '/**/*.*'
+    libs: appRoot + dir.libs + '/**/*.*',
+    mainScss: appRoot + dir.mainScss
 };
 
 var buildPaths = {
     html: buildRoot + dir.html,
     js: buildRoot + dir.js,
-    jsLibs: buildRoot + dir.js + '/libs',
     css: buildRoot + dir.css,
     images: buildRoot + dir.images,
     libs: buildRoot + dir.libs,
@@ -45,7 +44,7 @@ var buildPaths = {
 };
 
 gulp.task('stylesheets', function() {
-    return gulp.src(appPaths.scss)
+    return gulp.src(appPaths.mainScss)
         .pipe(sourcemaps.init())
         .pipe(sass({
             includePaths: bourbon.includePaths,
