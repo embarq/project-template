@@ -3,8 +3,15 @@
   "version": "0.0.1",
   "description": "Project dev-template",
   "main": "gulpfile.js",
-  "scripts": {
-    "test": "none"
+  "devDependencies": {
+	"browser-sync": "*",
+	"del": "*",
+	"gulp": "*",
+	"gulp-autoprefixer": "*",
+	"gulp-concat": "*",
+	"gulp-sass": "*",
+	"gulp-sourcemaps": "*",
+	"node-bourbon": "*"
   },
   "author": "embarq",
   "license": "ISC"
