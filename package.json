@@ -1,0 +1,11 @@
+{
+  "name": "project-name",
+  "version": "0.0.1",
+  "description": "Project dev-template",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "none"
+  },
+  "author": "embarq",
+  "license": "ISC"
+}
