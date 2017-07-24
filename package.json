@@ -2,17 +2,24 @@
   "name": "project-name",
   "version": "0.0.1",
   "description": "Project dev-template",
-  "main": "gulpfile.js",
-  "devDependencies": {
-	"browser-sync": "*",
-	"del": "*",
-	"gulp": "*",
-	"gulp-autoprefixer": "*",
-	"gulp-concat": "*",
-	"gulp-sass": "*",
-	"gulp-sourcemaps": "*",
-	"node-bourbon": "*"
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp build",
+    "bower": "bower",
+    "bower-install": "bower i -S"
   },
+  "main": "gulpfile.js",
   "author": "embarq",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "bower": "1.8.0",
+    "browser-sync": "2.18.13",
+    "del": "3.0.0",
+    "gulp": "3.9.1",
+    "gulp-autoprefixer": "4.0.0",
+    "gulp-concat": "2.6.1",
+    "gulp-sass": "3.1.0",
+    "gulp-sourcemaps": "2.6.0",
+    "node-bourbon": "4.2.8"
+  }
 }
