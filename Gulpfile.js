@@ -31,7 +31,7 @@ var appPaths = {
     images: appRoot + dir.images + '/**/*.*',
     fonts: appRoot + dir.fonts + '/**/*.*',
     libs: appRoot + dir.libs + '/**/*.*',
-    mainScss: appRoot + dir.mainScss
+    mainScss: appRoot + dir.scss + dir.mainScss
 };
 
 var buildPaths = {
@@ -111,7 +111,7 @@ gulp.task('server', function() {
 });
 
 gulp.task('clean', function() {
-    del(buildRoot);
+    del.sync([buildRoot]);
 })
 
 gulp.task('build', [
